@@ -15,20 +15,15 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.json",
-            "assets": [
-              "src/assets",
-              "src/favicon.ico"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/assets", "src/favicon.ico"],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
             "source": {
               "fileReplacements": [
                 {
-                  "replace": "src/undefined",
+                  "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.ts"
                 }
               ]
@@ -89,13 +84,8 @@
             "main": "src/test.ts",
             "karmaConfig": "./karma.conf.js",
             "scripts": [],
-            "styles": [
-              "src/styles.css"
-            ],
-            "assets": [
-              "src/assets",
-              "src/favicon.ico"
-            ]
+            "styles": ["src/styles.css"],
+            "assets": ["src/assets", "src/favicon.ico"]
           }
         },
         "lint": {
