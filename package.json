@@ -42,10 +42,10 @@
     "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.0.2",
     "karma-junit-reporter": "^1.2.0",
-    "karma-remap-istanbul": "^0.2.1",
-    "protractor": "~4.0.13",
-    "ts-node": "1.2.1",
-    "tslint": "^4.0.2",
+    "karma-remap-istanbul": "^0.2.2",
+    "protractor": "~5.4.0",
+    "ts-node": "7.0.0",
+    "tslint": "^5.11.0",
     "typescript": "~3.1.6"
   }
 }
