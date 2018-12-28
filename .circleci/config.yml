@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/angular-cli-circleci
     docker:
-      - image: circleci/node:6-browsers
+      - image: circleci/node:10-browsers
     steps:
       - checkout
       - restore_cache:
@@ -22,12 +22,12 @@ jobs:
       - run:
           name: angular-test
           command: yarn test -- --single-run --no-progress
-      - store_artifacts:
-          path: test-results.xml
-          prefix: tests
-      - run:
-          name: angular-lint
-          command: yarn lint -- --formatters-dir ./tslint-formatters --format junit -o tslint.xml
-      - store_artifacts:
-          path: tslint.xml
-          prefix: lint
+    #   - store_artifacts:
+    #       path: test-results.xml
+    #       prefix: tests
+    #   - run:
+    #       name: angular-lint
+    #       command: yarn lint -- --formatters-dir ./tslint-formatters --format junit -o tslint.xml
+    #   - store_artifacts:
+    #       path: tslint.xml
+    #       prefix: lint
